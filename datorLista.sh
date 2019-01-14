@@ -66,6 +66,7 @@ add() {
 		if computerExists $sn; then
 
 			echo -e "\033[0;31mEn dator med SN $sn finns redan!\033[0m"
+			
 		else
 
 			echo -n "Märke: "
@@ -170,6 +171,10 @@ removeList() {
 }
 
 while true; do
+
+if [[ ! -e datorLista.txt  ]]; then
+	touch datorLista.txt
+fi
 
 echo "Vad vill du göra?"
 echo "1) Lista datorer 2) Lägg till dator 3) Importera dator(er) från fil 4) Ta bort dator 5) Ta bort listan 6) Avsluta"
