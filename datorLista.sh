@@ -125,7 +125,7 @@ removeComputer() {
 
 	if [ ! -e datorLista.txt ]; then
 
-		echo -e "\033[0;31mIngen dator tillagd!\033[0m"
+		echo -e "\033[0;31mFil finns inte!\033[0m"
 	else
 
 		echo -n "SN på datorn du vill ta bort: "
