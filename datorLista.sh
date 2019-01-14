@@ -74,7 +74,7 @@ add() {
 			echo -n "Modell: "
 			read model
 
-			echo -n "RAM (GB): "
+			echo -n "RAM: "
 			read ram
 
 			echo -n "Lagring: "
